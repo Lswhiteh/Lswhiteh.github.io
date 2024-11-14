@@ -177,22 +177,6 @@
             }
         }
     </style>
-        <script>
-            function decodeEmail() {
-                const coded = "ybtna.juvgrubhfr@iveavxn.nv";
-                const key = "GHIJKLMNOPQRSTUVWXYZAbCDEFghijklmnopqrstuvwxyzabc1234567890@.";
-                const shift = coded.length;
-                let link = "";
-                for (let i = 0; i < coded.length; i++) {
-                if (key.indexOf(coded.charAt(i)) == -1) {
-                    email += coded.charAt(i);
-                } else {
-                    email += key.charAt((key.indexOf(coded.charAt(i)) - shift + key.length) % key.length);
-                }
-            }
-            document.getElementById('email-display').textContent = email;
-        }
-        </script>
 </head>
 <body>
     <nav>
@@ -261,7 +245,7 @@
                 <div class="card">
                     <p>Based in Hillsborough, NC</p>
                     <p>Available for consulting and speaking engagements</p>
-                    <p><a href="#" onclick="decodeEmail(); return false;" style="color: var(--primary); text-decoration: none;" id="email-display">Click to reveal email</a></p>
+                    <p>logan.whitehouse (at) virnika.ai</p>
                     <div class="social-links" style="margin-top: 1rem;">
                         <a href="https://github.com/lswhiteh" style="color: var(--primary);"><i class="fab fa-github"></i></a>
                         <a href="https://linkedin.com/in/logan-whitehouse" style="color: var(--primary);"><i class="fab fa-linkedin"></i></a>
